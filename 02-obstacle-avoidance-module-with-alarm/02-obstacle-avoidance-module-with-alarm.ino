@@ -18,7 +18,4 @@ void loop() {
   }else{
     digitalWrite(buzzerPin, LOW);
   }
-    
-  
-
 }
