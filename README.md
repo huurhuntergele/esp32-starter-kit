@@ -36,7 +36,7 @@ note: The obstacle sensor outputs on GPIO32 will always be 0 (obstacle) or 1 (no
 | | VCC | **3V3** | Red |
 | | GND | **GND** | Black |
 
-### 03. RGB LED controlled by potentiometer
+### 03. RGB LED Controlled by Potentiometer
 ### Circuit Diagram
 | Wokwi Simulation Diagram 
 | :---: |
