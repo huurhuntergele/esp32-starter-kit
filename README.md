@@ -34,7 +34,7 @@ note: The buttons are configured using internal pull-up resistors. The ESP32 det
 | | Ground Side | **GND** | Black |
 | **Red Button** | Input Side | **GPIO 33** | Yellow |
 | | Ground Side | **GND** | Black |
-## 02. Obstacle Avoidance Module and Buzzer
+## 02. Obstacle Avoidance Module and Active Buzzer
 ### Circuit Diagram
 | Wokwi Simulation Diagram 
 | :---: |
