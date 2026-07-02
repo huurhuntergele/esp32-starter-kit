@@ -1,5 +1,5 @@
 # ESP32 Starter Kit
-I bought this ESP32 basic starter kit from AliExpress and tried everything inside.
+Bought this ESP32 starter kit from AliExpress and built a bunch of small projects by mixing and matching the parts.
 ### Components
 - ESP32 Development Board
 - 0.96 inch OLED
