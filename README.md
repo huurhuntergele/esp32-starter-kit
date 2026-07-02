@@ -5,3 +5,21 @@ I bought this ESP32 basic starter kit from AliExpress and tried everything insid
 
 ## 01. leds and buttons
 ## 02. obstacle avoidance module and buzzer
+
+
+### Circuit Diagram
+| Wokwi Simulation Diagram 
+| :---: |
+|<img width="741" height="337" alt="image-removebg-preview (3)" src="https://github.com/user-attachments/assets/9bac1d0e-da2e-4769-9dc8-7e2ac087fe71" />
+
+
+
+note: The obstacle sensor outputs on GPIO32 will always be 0 (obstacle) or 1 (no obstacle). The ESP32 continuously polls the state using "digitalRead(32)". If the state is 0, the code triggers the buzzer by setting GPIO12 to HIGH.
+### Wiring
+| Component | Component Pin | ESP32 GPIO Pin | Wire Color |
+| :--- | :--- | :--- | :--- |
+| **Buzzer** | Positive (+) | **GPIO 12** | Green |
+| | Negative (-) | **GND** | Black |
+| **Obstacle Sensor** | DAT (OUT) | **GPIO 32** | Blue |
+| | VCC | **3V3** | Red |
+| | GND | **GND** | Black |
