@@ -35,3 +35,22 @@ note: The obstacle sensor outputs on GPIO32 will always be 0 (obstacle) or 1 (no
 | **Obstacle Sensor** | DAT (OUT) | **GPIO 32** | Blue |
 | | VCC | **3V3** | Red |
 | | GND | **GND** | Black |
+
+### 03. RGB LED controlled by potentiometer
+### Circuit Diagram
+| Wokwi Simulation Diagram 
+| :---: |
+|<img width="713" height="350" alt="image-removebg-preview (5)" src="https://github.com/user-attachments/assets/07edbba7-d98a-470d-a407-f17fb0a4d266" />|
+note: The ESP32 reads analog voltage from potentiometer (0 to 4095) and maps it into 7 steps (0 to 6). A switch case cycles through different color combination(red->yellow->green->cyan->blue->purple->white) based on the knob's position.
+### Wiring
+| Component | Component Pin | ESP32 GPIO Pin | Wire Color |
+| :--- | :--- | :--- | :--- |
+| **RGB LED** | Red Anode (via Resistor) | **GPIO 32** | Red |
+| | Green Anode (via Resistor) | **GPIO 33** | Green |
+| | Blue Anode (via Resistor) | **GPIO 14** | Blue |
+| | Common Cathode (-) | **GND** | Black |
+| **Potentiometer** | Left Pin | **Vin** | Yellow |
+| | Middle Pin (Wiper) | **GPIO 34** | Brown |
+| | Right Pin | **GND** | Black |
+
+
