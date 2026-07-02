@@ -6,7 +6,7 @@ I bought this ESP32 basic starter kit from AliExpress and tried everything insid
 - Breadboard
 - Obstacle Avoidance Module
 - Photosensitive Resistor Module
-- DHT temparature sensor
+- DHT temperature sensor
 - HC-SR501 PIR Motion Sensor
 - Passive/Active Buzzers
 - Button Switch
@@ -49,7 +49,7 @@ note: The obstacle sensor outputs on GPIO32 will always be 0 (obstacle) or 1 (no
 | | VCC | **3V3** | Red |
 | | GND | **GND** | Black |
 
-### 03. RGB LED Controlled by Potentiometer
+## 03. RGB LED Controlled by Potentiometer
 ### Circuit Diagram
 | Wokwi Simulation Diagram 
 | :---: |
@@ -66,14 +66,22 @@ note: The ESP32 reads analog voltage from potentiometer (0 to 4095) and maps it 
 | | Middle Pin (Wiper) | **GPIO 34** | Brown |
 | | Right Pin | **GND** | Black |
 
-### 04. LED controlled by Motion sensor
+## 04. LED controlled by Motion sensor
 ### Circuit Diagram
 | Wokwi Simulation Diagram 
 | :---: |
 |<img width="860" height="290" alt="image-removebg-preview (6)" src="https://github.com/user-attachments/assets/b968a054-2cfa-4eae-b645-935dd12f64d9" />|
 note: When motion is detected, the sensor pin outputs HIGH (1), and GPIO 33 drives the LED on. 
-When no motion is detected, the output is LOW (0) and the LED turns off. PIR motion sensors have wo trimmer potentiometers on the board itself. One is for sensitivity and another one is for time delay. If your sensor's cycling time taking too long, check out the potentiometer.
+When no motion is detected, the output is LOW (0) and the LED turns off. PIR motion sensors have two trimmer potentiometers on the board itself. One is for sensitivity and another one is for time delay. If your sensor's cycling time taking too long, check out the potentiometer.
 ### Wiring
+| Component | Component Pin | ESP32 GPIO Pin | Wire Color |
+| :--- | :--- | :--- | :--- |
+| **Yellow LED** | Anode (via Resistor) | **GPIO 33** | Orange |
+| | Cathode (-) | **GND** | Black |
+| **PIR Motion Sensor** | VCC (+) | **5V** | Red |
+| | OUT (D) | **GPIO 13** | Green |
+| | GND (-) | **GND** | Black |
+
 
 
 
