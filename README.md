@@ -71,8 +71,7 @@ note: The ESP32 reads analog voltage from potentiometer (0 to 4095) and maps it 
 | Wokwi Simulation Diagram 
 | :---: |
 |<img width="860" height="290" alt="image-removebg-preview (6)" src="https://github.com/user-attachments/assets/b968a054-2cfa-4eae-b645-935dd12f64d9" />|
-note: When motion is detected, the sensor pin outputs HIGH (1), and GPIO 33 drives the LED on. 
-When no motion is detected, the output is LOW (0) and the LED turns off. PIR motion sensors have two trimmer potentiometers on the board itself. One is for sensitivity and another one is for time delay. If your sensor's cycling time taking too long, check out the potentiometer.
+note: When motion is detected, the sensor pin outputs HIGH (1), and GPIO 33 drives the LED on. PIR motion sensors have wo trimmer potentiometers on the board itself. One is for sensitivity and another one is for time delay. If your sensor's cycling time taking too long, check out the potentiometer.
 ### Wiring
 | Component | Component Pin | ESP32 GPIO Pin | Wire Color |
 | :--- | :--- | :--- | :--- |
