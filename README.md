@@ -87,6 +87,7 @@ Bought this ESP32 starter kit from AliExpress and built a bunch of small project
 | | GND | **GND** | Black |
 
 ## 05. DHT11 with 0.96 inch OLED 
+### Circuit Diagram
 | Wokwi Simulation Diagram 
 | :---: |
 |<img width="729" height="342" alt="image-removebg-preview (10)" src="https://github.com/user-attachments/assets/5362048f-9201-4cc7-9d59-bb7ad8decf6e" />|
