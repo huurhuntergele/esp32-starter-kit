@@ -1,6 +1,8 @@
 
 # ESP32 Starter Kit
 Bought this ESP32 starter kit from AliExpress and built a bunch of small projects by mixing and matching the parts.
+
+
 ### Components
 - ESP32 Development Board
 - 0.96 inch OLED
@@ -116,6 +118,8 @@ Bought this ESP32 starter kit from AliExpress and built a bunch of small project
 | | Data | **GPIO 33** | Green |
 | | GND (-) | **GND** | Black |
 
+tried everything except relay and passive buzzer. SEEYA
+<img width="187" height="155" alt="image" src="https://github.com/user-attachments/assets/ab9c0169-bae6-4236-8e42-d1cdd045dc4e" />
 
 
 
