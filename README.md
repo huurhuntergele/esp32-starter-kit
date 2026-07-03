@@ -42,9 +42,6 @@ Bought this ESP32 starter kit from AliExpress and built a bunch of small project
 | | Cathode (-) | **GND** | Black |
 | **LED 6 (Bottom)** | Anode (via Resistor) | **GPIO 19** | Green |
 | | Cathode (-) | **GND** | Black |
-| **PIR Sensor** | VCC | **5V** | Red |
-| | GND | **GND** | Black |
-| | OUT | **GPIO 34** | Blue |
 | **Push Button** | Input Side | **GPIO 18** | Pink |
 | | Ground Side | **GND** | Black |
 ## 02. Obstacle Avoidance Module and Active Buzzer
