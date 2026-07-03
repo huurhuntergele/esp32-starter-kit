@@ -1,3 +1,4 @@
+
 # ESP32 Starter Kit
 Bought this ESP32 starter kit from AliExpress and built a bunch of small projects by mixing and matching the parts.
 ### Components
@@ -89,7 +90,7 @@ Bought this ESP32 starter kit from AliExpress and built a bunch of small project
 | Wokwi Simulation Diagram 
 | :---: |
 |<img width="729" height="342" alt="image-removebg-preview (10)" src="https://github.com/user-attachments/assets/5362048f-9201-4cc7-9d59-bb7ad8decf6e" />|
-**note**: Show temperature and humidity on OLED display
+**note**: Show temperature and humidity data from DHT11 sensor  on 0.96 inch  OLED display       
 
 
 
