@@ -15,26 +15,34 @@ Bought this ESP32 starter kit from AliExpress and built a bunch of small project
 - Relay Module
 - LED-RGB
 - LED-Red, Yellow, Green
-  
+ 
 
-## 01. LEDs and Buttons
+
+## 01. Catch the red game
 ### Circuit Diagram
 | Wokwi Simulation Diagram 
 | :---: |
-|<img width="652" height="383" alt="image-removebg-preview (4)" src="https://github.com/user-attachments/assets/93fee753-47ee-499b-87af-6db4f71cf92b" />|
-**note**: The buttons are configured using internal pull-up resistors. The ESP32 detects the state of buttons and toggles the on/off states of the respective LEDs.
+| <img width="783" height="319" alt="image-removebg-preview (11)" src="https://github.com/user-attachments/assets/d3f655db-c9ce-478f-a46e-a322166689fb" />|
+**note**: Can choose the speed by potentiometer and LED will turn on chasing patern, need to catch the red! Scores will shown in serial monitor
 
 ### Wiring
 | Component | Component Pin | ESP32 GPIO Pin | Wire Color |
 | :--- | :--- | :--- | :--- |
-| **Green LED** | Anode (via Resistor) | **GPIO 27** | Green |
+| **LED 1 (Top)** | Anode (via Resistor) | **GPIO 32** | Yellow |
 | | Cathode (-) | **GND** | Black |
-| **Red LED** | Anode (via Resistor) | **GPIO 12** | Red |
+| **LED 2** | Anode (via Resistor) | **GPIO 33** | Brown |
 | | Cathode (-) | **GND** | Black |
-| **Green Button** | Input Side | **GPIO 32** | Blue |
-| | Ground Side | **GND** | Black |
-| **Red Button** | Input Side | **GPIO 33** | Yellow |
-| | Ground Side | **GND** | Black |
+| **LED 3** | Anode (via Resistor) | **GPIO 27** | Pink |
+| | Cathode (-) | **GND** | Black |
+| **LED 4 (Red)** | Anode (via Resistor) | **GPIO 14** | Gray |
+| | Cathode (-) | **GND** | Black |
+| **LED 5** | Anode (via Resistor) | **GPIO 13** | Cyan |
+| | Cathode (-) | **GND** | Black |
+| **LED 6 (Bottom)** | Anode (via Resistor) | **GPIO 19** | Green |
+| | Cathode (-) | **GND** | Black |
+| **PIR Sensor** | VCC | **5V** | Red |
+| | GND | **GND** | Black |
+| | OUT | **GPIO 34** | Blue |
 ## 02. Obstacle Avoidance Module and Active Buzzer
 ### Circuit Diagram
 | Wokwi Simulation Diagram 
