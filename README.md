@@ -25,7 +25,7 @@ Bought this ESP32 starter kit from AliExpress and built a bunch of small project
 | Wokwi Simulation Diagram 
 | :---: |
 |<img width="775" height="322" alt="image-removebg-preview (12)" src="https://github.com/user-attachments/assets/a0e7f44f-338e-45c5-b48d-f872165e2ce3" />|
-**note**: Test your reflexes in this interactive LED chase game! Use the potentiometer to adjust the speed of the chasing pattern and try to press the button exactly when the Red LED is illuminated to score points.
+**note**: Test your reflexes in this interactive LED chase game! Use the potentiometer to adjust the speed of the chasing pattern and try to press the button exactly when the Red LED is illuminated to score points. Scores will show in serial monitor.
 
 ### Wiring
 | Component | Component Pin | ESP32 GPIO Pin | Wire Color |
