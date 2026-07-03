@@ -21,7 +21,7 @@ Bought this ESP32 starter kit from AliExpress and built a bunch of small project
 | Wokwi Simulation Diagram 
 | :---: |
 |<img width="652" height="383" alt="image-removebg-preview (4)" src="https://github.com/user-attachments/assets/93fee753-47ee-499b-87af-6db4f71cf92b" />|
-note: The buttons are configured using internal pull-up resistors. The ESP32 detects the state of buttons and toggles the on/off states of the respective LEDs.
+**note**: The buttons are configured using internal pull-up resistors. The ESP32 detects the state of buttons and toggles the on/off states of the respective LEDs.
 
 ### Wiring
 | Component | Component Pin | ESP32 GPIO Pin | Wire Color |
@@ -39,7 +39,7 @@ note: The buttons are configured using internal pull-up resistors. The ESP32 det
 | Wokwi Simulation Diagram 
 | :---: |
 |<img width="741" height="337" alt="image-removebg-preview (3)" src="https://github.com/user-attachments/assets/9bac1d0e-da2e-4769-9dc8-7e2ac087fe71" />|
-note: The obstacle sensor outputs on GPIO32 will always be 0 (obstacle) or 1 (no obstacle). The ESP32 continuously polls the state using "digitalRead(32)". If the state is 0, the code triggers the buzzer by setting GPIO12 to HIGH.
+**note**: The obstacle sensor outputs on GPIO32 will always be 0 (obstacle) or 1 (no obstacle). The ESP32 continuously polls the state using "digitalRead(32)". If the state is 0, the code triggers the buzzer by setting GPIO12 to HIGH.
 ### Wiring
 | Component | Component Pin | ESP32 GPIO Pin | Wire Color |
 | :--- | :--- | :--- | :--- |
@@ -54,7 +54,7 @@ note: The obstacle sensor outputs on GPIO32 will always be 0 (obstacle) or 1 (no
 | Wokwi Simulation Diagram 
 | :---: |
 |<img width="713" height="350" alt="image-removebg-preview (5)" src="https://github.com/user-attachments/assets/07edbba7-d98a-470d-a407-f17fb0a4d266" />|
-note: The ESP32 reads analog voltage from potentiometer (0 to 4095) and maps it into 7 steps (0 to 6). A switch case cycles through different color combination(red->yellow->green->cyan->blue->purple->white) based on the knob's position.
+**note**: The ESP32 reads analog voltage from potentiometer (0 to 4095) and maps it into 7 steps (0 to 6). A switch case cycles through different color combination(red->yellow->green->cyan->blue->purple->white) based on the knob's position.
 ### Wiring
 | Component | Component Pin | ESP32 GPIO Pin | Wire Color |
 | :--- | :--- | :--- | :--- |
@@ -66,20 +66,24 @@ note: The ESP32 reads analog voltage from potentiometer (0 to 4095) and maps it 
 | | Middle Pin (Wiper) | **GPIO 34** | Brown |
 | | Right Pin | **GND** | Black |
 
-## 04. LED controlled by Motion sensor
+## 04. LED automated by Motion Sensor and Photosensitive Resistor Module
+ 
 ### Circuit Diagram
 | Wokwi Simulation Diagram 
 | :---: |
-|<img width="805" height="310" alt="image-removebg-preview (7)" src="https://github.com/user-attachments/assets/a1bbe517-7608-4e01-a0c8-526164d36ee2" />|
-note: When motion is detected, the sensor pin outputs HIGH (1), and GPIO 33 drives the LED on. PIR motion sensors have wo trimmer potentiometers on the board itself. One is for sensitivity and another one is for time delay. If your sensor's cycling time taking too long, check out the potentiometer.
+|<img width="822" height="304" alt="image-removebg-preview (8)" src="https://github.com/user-attachments/assets/2472b3c4-5f14-47ea-aaf2-6b2fb4cb1b28" />|
+**note**: The LED will only trigger when **both** conditions are met: the PIR sensor detects motion AND the photoresistor detects a dark environment.
 ### Wiring
 | Component | Component Pin | ESP32 GPIO Pin | Wire Color |
 | :--- | :--- | :--- | :--- |
-| **Yellow LED** | Anode (via Resistor) | **GPIO 33** | Orange |
+| **Red LED** | Anode (+) via Resistor | **GPIO 13** | Green |
 | | Cathode (-) | **GND** | Black |
-| **PIR Motion Sensor** | VCC (+) | **5V** | Red |
-| | OUT (D) | **GPIO 13** | Green |
+| **PIR Motion Sensor** | VCC (+) | **5V / VIN** | Red |
+| | OUT (D) | **GPIO 27** | Blue |
 | | GND (-) | **GND** | Black |
+| **Photosensitive Module** | VCC | **3V3 (3.3V)** | Red |
+| | A0 (Analog Out) | **GPIO 33** | Yellow  |
+| | GND | **GND** | Black |
 
 
 
