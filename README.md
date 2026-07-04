@@ -118,10 +118,38 @@ Bought this ESP32 starter kit from AliExpress and built a bunch of small project
 | | Data | **GPIO 33** | Green |
 | | GND (-) | **GND** | Black |
 
-tried everything except relay and passive buzzer. SEEYA
+
+
+## 06. Simple electronic piano
+
+### Circuit Diagram
+| Wokwi Simulation Diagram 
+| :---: |
+|<img width="665" height="375" alt="image-removebg-preview (14)" src="https://github.com/user-attachments/assets/67feb84d-a2e9-4d2d-aa0b-9b85ab96cda7" />|
+**note**: Made 7 notes electronic piano with passive buzzer.        
+
+
+
+
+### Wiring
+
+| Component | Component Pin | ESP32 GPIO Pin | Wire Color |
+| :--- | :--- | :--- | :--- |
+| **Buttons (All 7)** | Common Ground Side | **GND** | Black |
+| **Button 1** | Signal Side | **GPIO 19** | Blue |
+| **Button 2** | Signal Side | **GPIO 18** | Blue |
+| **Button 3** | Signal Side | **GPIO 5** | White |
+| **Button 4** | Signal Side | **GPIO 21** | Blue |
+| **Button 5** | Signal Side | **GPIO 22** | White |
+| **Button 6** | Signal Side | **GPIO 23** | Red |
+| **Button 7** | Signal Side | **GPIO 25** | White |
+| **Passive Buzzer** | Negative (-) | **GND** | Black |
+|| Positive (+) | **GPIO 32** (via Resistor) | Red |
+
+
+
+tried everything except relay. SEEYA
 <img width="187" height="155" alt="image" src="https://github.com/user-attachments/assets/ab9c0169-bae6-4236-8e42-d1cdd045dc4e" />
-
-
 
 
 
